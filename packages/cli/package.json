@@ -20,10 +20,10 @@
     "@js-scribblify/local-client": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.22",
-    "esbuild": "0.8.26",
-    "typescript": "^4.1.3",
     "@js-scribblify/local-api": "^1.0.0",
-    "commander": "^7.0.0"
+    "@types/node": "^14.14.22",
+    "commander": "^7.0.0",
+    "esbuild": "0.8.26",
+    "typescript": "^4.1.3"
   }
 }
