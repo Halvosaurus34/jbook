@@ -1,6 +1,6 @@
 {
   "name": "js-scribblify",
-  "version": "8.0.0",
+  "version": "7.0.0",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -16,6 +16,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@js-scribblify/local-client": "^1.0.0"
+  },
   "devDependencies": {
     "@js-scribblify/local-api": "^1.0.0",
     "@types/node": "^14.14.22",
