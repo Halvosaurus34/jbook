@@ -1,13 +1,12 @@
 .progress-wrapper {
+  height: 100%;
   flex-grow: 1;
   background-color: white;
-  height: 100%;
 }
 
 .progress-cover {
+  height: 100%;
   width: 100%;
-  flex-grow: 1;
-  background-color: white;
   display: flex;
   align-items: center;
   padding-left: 10%;
@@ -23,6 +22,6 @@
     opacity: 0;
   }
   100% {
-    opacity: 100;
+    opacity: 1;
   }
 }

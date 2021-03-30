@@ -1,6 +1,6 @@
-import produce from "immer";
-import { ActionType } from "../action-types";
-import { Action } from "../actions";
+import produce from 'immer';
+import { ActionType } from '../action-types';
+import { Action } from '../actions';
 
 interface BundlesState {
   [key: string]:
@@ -20,8 +20,8 @@ const reducer = produce(
       case ActionType.BUNDLE_START:
         state[action.payload.cellId] = {
           loading: true,
-          code: "",
-          err: "",
+          code: '',
+          err: '',
         };
         return state;
       case ActionType.BUNDLE_COMPLETE:
@@ -30,7 +30,6 @@ const reducer = produce(
           code: action.payload.bundle.code,
           err: action.payload.bundle.err,
         };
-
         return state;
       default:
         return state;
