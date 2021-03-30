@@ -1,5 +1,128 @@
-46 error Error: Command failed: git tag v2.0.0 -m v2.0.0
-46 error fatal: tag 'v2.0.0' already exists
-46 error
-46 error     at makeError (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:174:9)
-46 error     at C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:278:16
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': '..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v3.22.1
+2 verbose rootPath C:\Users\lhalv\Documents\Coding\jbook
+3 verbose session efa6f026c3123b2f
+4 verbose user-agent lerna/3.22.1/node@v14.16.0+x64 (win32)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.22.1' }
+6 verbose rootPath C:\Users\lhalv\Documents\Coding\jbook
+7 info current version 6.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v6.0.0-1-g90a2677" => {"lastTagName":"v6.0.0","lastVersion":"v6.0.0","refCount":"1","sha":"90a2677","isDirty":false}
+18 info Looking for changed packages since v6.0.0
+19 silly checking diff packages/cli
+20 silly found diff in packages/cli/package.json
+21 verbose filtered diff [ 'packages/cli/package.json' ]
+22 silly checking diff packages/local-api
+23 silly found diff in packages/local-api/package.json
+24 verbose filtered diff [ 'packages/local-api/package.json' ]
+25 silly checking diff packages/local-client
+26 silly found diff in packages/local-client/package.json
+27 verbose filtered diff [ 'packages/local-client/package.json' ]
+28 verbose updated js-scribblify
+29 verbose updated @js-scribblify/local-api
+30 verbose updated @js-scribblify/local-client
+31 verbose git-describe undefined => "v6.0.0-1-g90a2677"
+32 silly git-describe parsed => {"lastTagName":"v6.0.0","lastVersion":"v6.0.0","refCount":"1","sha":"90a2677","isDirty":false}
+33 info execute Skipping releases
+34 silly lifecycle No script for "preversion" in "root", continuing
+35 silly lifecycle No script for "preversion" in "js-scribblify", continuing
+36 silly lifecycle No script for "preversion" in "@js-scribblify/local-client", continuing
+37 silly lifecycle No script for "version" in "js-scribblify", continuing
+38 silly lifecycle No script for "version" in "@js-scribblify/local-client", continuing
+39 silly lifecycle No script for "preversion" in "@js-scribblify/local-api", continuing
+40 silly lifecycle No script for "version" in "@js-scribblify/local-api", continuing
+41 silly lifecycle No script for "version" in "root", continuing
+42 silly gitAdd [
+42 silly gitAdd   'packages/cli/package.json',
+42 silly gitAdd   'packages/cli/package-lock.json',
+42 silly gitAdd   'packages/local-client/package.json',
+42 silly gitAdd   'packages/local-client/package-lock.json',
+42 silly gitAdd   'packages/local-api/package.json',
+42 silly gitAdd   'packages/local-api/package-lock.json',
+42 silly gitAdd   'lerna.json'
+42 silly gitAdd ]
+43 silly gitCommit v7.0.0
+44 verbose git [ 'commit', '-m', 'v7.0.0' ]
+45 silly gitTag v7.0.0
+46 verbose git [ 'tag', 'v7.0.0', '-m', 'v7.0.0' ]
+47 silly lifecycle No script for "postversion" in "js-scribblify", continuing
+48 silly lifecycle No script for "postversion" in "@js-scribblify/local-api", continuing
+49 silly lifecycle No script for "postversion" in "@js-scribblify/local-client", continuing
+50 silly lifecycle No script for "postversion" in "root", continuing
+51 info git Pushing tags...
+52 silly gitPush origin master
+53 info publish Publishing packages to npm...
+54 info Verifying npm credentials
+55 verbose Retrieving npm user profile
+56 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 436ms
+57 silly npm profile get received {"tfa":{"pending":false,"mode":"auth-only"},"name":"halvosaurus","email":"lhalvorson34@gmail.com","email_verified":false,"created":"2021-03-30T19:29:14.270Z","updated":"2021-03-30T22:38:30.802Z","cidr_whitelist":null}
+58 silly get npm username received {"username":"halvosaurus","tfa":{"pending":false,"mode":"auth-only"},"name":"halvosaurus","email":"lhalvorson34@gmail.com","email_verified":false,"created":"2021-03-30T19:29:14.270Z","updated":"2021-03-30T22:38:30.802Z","cidr_whitelist":null}
+59 silly verifyNpmPackageAccess
+60 http fetch GET 200 https://registry.npmjs.org/-/org/halvosaurus/package?format=cli 120ms
+61 info Checking two-factor auth mode
+62 verbose Retrieving npm user profile
+63 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 175ms
+64 silly npm profile get received {"tfa":{"pending":false,"mode":"auth-only"},"name":"halvosaurus","email":"lhalvorson34@gmail.com","email_verified":false,"created":"2021-03-30T19:29:14.270Z","updated":"2021-03-30T22:38:30.802Z","cidr_whitelist":null}
+65 silly 2FA { pending: false, mode: 'auth-only' }
+66 warn ENOLICENSE Packages js-scribblify, @js-scribblify/local-api, and @js-scribblify/local-client are missing a license.
+66 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+66 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+67 silly getCurrentSHA
+68 verbose getCurrentSHA cda5c056b27bd3dae3e39df5d539d23527ca181a
+69 silly lifecycle No script for "prepublish" in "root", continuing
+70 silly lifecycle No script for "prepare" in "root", continuing
+71 silly lifecycle No script for "prepublishOnly" in "root", continuing
+72 silly lifecycle No script for "prepack" in "root", continuing
+73 verbose pack-directory packages\cli
+74 verbose pack-directory packages\local-client
+75 silly lifecycle No script for "prepublish" in "js-scribblify", continuing
+76 silly lifecycle No script for "prepublish" in "@js-scribblify/local-client", continuing
+77 silly lifecycle No script for "prepare" in "js-scribblify", continuing
+78 silly lifecycle No script for "prepare" in "@js-scribblify/local-client", continuing
+79 silly lifecycle "prepublishOnly" starting in "js-scribblify"
+80 info lifecycle js-scribblify@7.0.0~prepublishOnly: js-scribblify@7.0.0
+81 silly lifecycle "prepublishOnly" starting in "@js-scribblify/local-client"
+82 info lifecycle @js-scribblify/local-client@7.0.0~prepublishOnly: @js-scribblify/local-client@7.0.0
+83 verbose lifecycle js-scribblify@7.0.0~prepublishOnly: unsafe-perm in lifecycle true
+84 verbose lifecycle js-scribblify@7.0.0~prepublishOnly: PATH: C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\lhalv\Documents\Coding\jbook\packages\cli\node_modules\.bin;C:\Users\lhalv\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lhalv\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\nodejs;C:\Users\lhalv\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\lhalv\AppData\Local\Programs\Python\Python38-32;C:\Users\lhalv\AppData\Local\Microsoft\WindowsApps;C:\Users\lhalv\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\lhalv\AppData\Local\gitkraken\bin;C:\Users\lhalv\AppData\Local\Microsoft\WindowsApps;C:\Users\lhalv\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+85 verbose lifecycle js-scribblify@7.0.0~prepublishOnly: CWD: C:\Users\lhalv\Documents\Coding\jbook\packages\cli
+86 silly lifecycle js-scribblify@7.0.0~prepublishOnly: Args: [
+86 silly lifecycle   '/d /s /c',
+86 silly lifecycle   'esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\\"production\\"'
+86 silly lifecycle ]
+87 silly lifecycle js-scribblify@7.0.0~prepublishOnly: Returned: code: 0  signal: null
+88 verbose lifecycle @js-scribblify/local-client@7.0.0~prepublishOnly: unsafe-perm in lifecycle true
+89 verbose lifecycle @js-scribblify/local-client@7.0.0~prepublishOnly: PATH: C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\lhalv\Documents\Coding\jbook\packages\local-client\node_modules\.bin;C:\Users\lhalv\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lhalv\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\nodejs;C:\Users\lhalv\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\lhalv\AppData\Local\Programs\Python\Python38-32;C:\Users\lhalv\AppData\Local\Microsoft\WindowsApps;C:\Users\lhalv\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\lhalv\AppData\Local\gitkraken\bin;C:\Users\lhalv\AppData\Local\Microsoft\WindowsApps;C:\Users\lhalv\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+90 verbose lifecycle @js-scribblify/local-client@7.0.0~prepublishOnly: CWD: C:\Users\lhalv\Documents\Coding\jbook\packages\local-client
+91 silly lifecycle @js-scribblify/local-client@7.0.0~prepublishOnly: Args: [ '/d /s /c', 'npm run build' ]
+92 silly lifecycle "prepublishOnly" finished in "js-scribblify"
+93 silly lifecycle No script for "prepack" in "js-scribblify", continuing
+94 silly lifecycle No script for "postpack" in "js-scribblify", continuing
+95 verbose packed packages\cli
+96 silly lifecycle @js-scribblify/local-client@7.0.0~prepublishOnly: Returned: code: 0  signal: null
+97 silly lifecycle "prepublishOnly" finished in "@js-scribblify/local-client"
+98 silly lifecycle No script for "prepack" in "@js-scribblify/local-client", continuing
+99 error ZlibError: zlib: invalid stored block lengths
+99 error     at Unzip.write (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\minizlib\index.js:147:22)
+99 error     at Object.write (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\tar\lib\parse.js:305:58)
+99 error     at Yallist.<anonymous> (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:374:18)
+99 error     at Yallist.forEach (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\yallist\yallist.js:156:8)
+99 error     at ReadStream.emit (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:373:20)
+99 error     at ReadStream.emit (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:154:22)
+99 error     at ReadStream.write (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:163:17)
+99 error     at ReadStream.[_handleChunk] (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:131:19)
+99 error     at ReadStream.[_onread] (C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:109:32)
+99 error     at C:\Users\lhalv\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:101:22

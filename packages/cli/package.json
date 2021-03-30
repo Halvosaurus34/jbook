@@ -16,9 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@js-scribblify/local-client": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@js-scribblify/local-api": "^1.0.0",
     "@types/node": "^14.14.22",
@@ -26,5 +24,5 @@
     "esbuild": "0.8.26",
     "typescript": "^4.1.3"
   },
-  "gitHead": "8eeab96619e5854025c25147b407de382b39c26d"
+  "gitHead": "cda5c056b27bd3dae3e39df5d539d23527ca181a"
 }
